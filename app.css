@@ -1,0 +1,150 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: antiquewhite;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 250px;
+    position: relative;
+    z-index: 99;
+  }
+  .menu {
+    box-sizing: border-box;
+    border-radius: 10px 100px 10px 10px;
+    background-color: hsl(228, 56%, 26%);
+    width: 35%;
+    height: 150px;
+    padding: 30px;
+  }
+  .menuitems {
+    display: flex;
+  }
+  .item {
+    background-color: hsl(229, 57%, 11%);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .range {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+    width: 55%;
+    height: 130px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  #bar {
+    width: 90%;
+    background-color: hsl(229, 57%, 11%);
+    height: 20px;
+    margin: 10px 0px;
+    border-radius: 50px;
+    position: relative;
+  }
+  #bar::after {
+    content: "";
+    width: 70%;
+    height: 14px;
+    border-radius: 60px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: absolute;
+    left: 4px;
+    top: 3px;
+  }
+  #toggle::after {
+    content: "";
+    width: 1.5%;
+    height: 11px;
+    border-radius: 60px;
+    background: hsl(243, 100%, 93%);
+    position: absolute;
+    right: 181px;
+    top: 331px;
+  }
+  .bgimg {
+    width: 99.9vw;
+    padding-top: 177px;
+    box-sizing: border-box;
+    border-top-left-radius: 350px;
+    margin-top: -252px;
+  }
+  .gb {
+    display: flex;
+    width: 90%;
+  }
+  #start,
+  #end {
+    width: 50%;
+    font-weight: 800;
+    color: hsl(243, 100%, 93%);
+    font-size: 0.9em;
+  }
+  #end {
+    text-align: right;
+  }
+  footer {
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    body {
+      background-image: url(images/bg-mobile.png);
+    }
+    .bgimg {
+      display: none;
+    }
+    .main {
+      width: 85%;
+      padding-top: 150px;
+      padding-bottom: 190px;
+    }
+    .menu {
+      width: 100%;
+    }
+    .range {
+      width: 100%;
+      height: 130px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+    #bar {
+      width: 90%;
+      height: 20px;
+      margin: 10px 0px;
+      border-radius: 50px;
+    }
+    #bar::after {
+      width: 81.5%;
+      height: 14px;
+      left: 4px;
+      top: 3px;
+    }
+    #toggle::after {
+      width: 4%;
+      height: 11px;
+      right: 98px;
+      top: 381px;
+    }
+    .gb {
+      width: 90%;
+    }
+    #start,
+    #end {
+      width: 50%;
+    }
+    footer {
+      margin-top: 0px;
+    }
+  }
